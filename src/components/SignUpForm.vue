@@ -7,7 +7,7 @@
           :placeholder="text.EMAIL_PHONE"
         ></base-input>
         <base-input inputType="text" :placeholder="text.PASSWORD"></base-input>
-        <base-button color="blue">{{ text.LOGIN }}</base-button>
+        <base-button color="blue" class="text-xl">{{ text.LOGIN }}</base-button>
         <div>
           <a href="" class="text-blue-500 hover:underline text-sm">{{
             text.FORGOT_PASSWORD
@@ -15,7 +15,9 @@
         </div>
         <hr />
         <div class="p-5">
-          <base-button color="green">{{ text.ACCOUNT }}</base-button>
+          <base-button color="green" class="text-lg">{{
+            text.ACCOUNT
+          }}</base-button>
         </div>
       </form>
     </div>

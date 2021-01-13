@@ -15,23 +15,23 @@ export default defineComponent({
     },
     buttonType: {
       type: String,
-      default: "btn",
+      default: "primary",
     },
   },
 });
 </script>
 
 <style>
-.btn {
+.primary {
   @apply px-4 py-2 text-white transition duration-100 ease-in-out font-bold rounded-lg;
 }
-.btn-add {
-  @apply border-gray-400 border-solid rounded-md border-2 px-2 text-lg focus:outline-none;
+.add {
+  @apply border-gray-400 border-solid rounded-md border-2 pr-1 text-lg focus:outline-none;
 }
 .blue {
-  @apply btn bg-blue-500 hover:bg-blue-600;
+  @apply bg-blue-500 hover:bg-blue-600;
 }
 .green {
-  @apply btn bg-green-500 hover:bg-green-600;
+  @apply bg-green-500 hover:bg-green-600;
 }
 </style>

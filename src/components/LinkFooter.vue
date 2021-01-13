@@ -8,9 +8,9 @@
         ><a href="" class="link">{{ link }}</a></span
       >
       <span
-        ><button class="btn-add">
+        ><base-button class="add">
           +
-        </button></span
+        </base-button></span
       >
       <hr class="my-2" />
       <span
@@ -28,6 +28,8 @@
 import { defineComponent, PropType } from "vue";
 import { useStore } from "@/store/use-store";
 import { LandingPageText } from "@/enums/landing-page-text.enum";
+import BaseButton from "./_base/BaseButton.vue";
+
 export default defineComponent({
   name: "link-footer",
   props: {
