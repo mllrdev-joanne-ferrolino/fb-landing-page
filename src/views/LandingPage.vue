@@ -2,12 +2,12 @@
   <div
     class="m-auto flex flex-col items-center space-y-6 h-screen w-screen bg-gray-100"
   >
-    <div class="flex lg:flex-row sm:flex-col m-auto items-center">
+    <div class="flex lg:flex-row sm:flex-col sm:mt-8 m-auto items-center">
       <div class="flex-1 lg:text-left sm:text-center sm:w-8/12">
         <h1 class="text-5xl font-bold text-blue-500">
           {{ text.LOGO }}
         </h1>
-        <p class="text-2xl">
+        <p class="text-2xl mt-5">
           {{ text.DESCRIPTION }}
         </p>
       </div>

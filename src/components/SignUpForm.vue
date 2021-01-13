@@ -4,13 +4,13 @@
       <form class="flex flex-col space-y-3">
         <base-input
           inputType="text"
-          placeholder="Email or Phone Number"
+          :placeholder="text.EMAIL_PHONE"
         ></base-input>
-        <base-input inputType="text" placeholder="Password"></base-input>
+        <base-input inputType="text" :placeholder="text.PASSWORD"></base-input>
         <base-button color="blue">{{ text.LOGIN }}</base-button>
         <div>
           <a href="" class="text-blue-500 hover:underline text-sm">{{
-            text.PASSWORD
+            text.FORGOT_PASSWORD
           }}</a>
         </div>
         <hr />

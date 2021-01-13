@@ -1,6 +1,6 @@
 <template>
   <div class="text-left p-10 bg-white mx-auto">
-    <div class="w-10/12 flex-shrink mx-auto">
+    <div class="w-full flex-shrink 2xl:w-7/12 mx-auto">
       <span
         v-for="(link, index) in linkTitles.languages"
         :key="index"
@@ -19,7 +19,7 @@
         :key="index"
         ><a href="" class="link">{{ link }}</a></span
       >
-      <div class="text-xs  text-gray-500 my-4">Facebook © 2021</div>
+      <div class="text-xs  text-gray-500 my-4">{{ copyright }}</div>
     </div>
   </div>
 </template>
@@ -27,6 +27,7 @@
 <script lang="ts">
 import { defineComponent, PropType } from "vue";
 import { useStore } from "@/store/use-store";
+import { LandingPageText } from "@/enums/landing-page-text.enum";
 export default defineComponent({
   name: "link-footer",
   props: {
@@ -36,8 +37,9 @@ export default defineComponent({
   },
   setup(props) {
     const linkTitles = props.links ?? [];
+    const copyright = LandingPageText.COPYRIGHT;
 
-    return { linkTitles };
+    return { linkTitles, copyright };
   },
 });
 </script>
