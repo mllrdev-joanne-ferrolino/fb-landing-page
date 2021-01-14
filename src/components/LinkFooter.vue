@@ -1,6 +1,6 @@
 <template>
   <div class="text-left p-10 bg-white mx-auto">
-    <div class="w-full flex-shrink 2xl:w-7/12 mx-auto">
+    <div class="w-full flex-shrink 2xl:w-7/12 xl:w-9/12 mx-auto">
       <span
         v-for="(link, index) in linkTitles.languages"
         :key="index"

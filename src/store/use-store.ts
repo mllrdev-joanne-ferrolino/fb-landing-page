@@ -1,4 +1,28 @@
-export const Links = {
+// import { useJoanne } from "./useJoanne";
+
+// interface IJoanne {
+//   a: string;
+//   b: string;
+//   c: string;
+//   q: string;
+//   w: string;
+//   e: string;
+// }
+
+// const x = useJoanne()
+
+// x.qwe.asf.string;
+
+// const ONE = 2;
+
+// no type assertion, such as "as ILinks" or "<ILinks>"
+
+interface ILinks {
+  languages: string[];
+  otherLinks: string[];
+}
+
+export const Links: ILinks = {
   languages: [
     "English (US)",
     "Filipino",
@@ -11,7 +35,7 @@ export const Links = {
     "Português (Brasil)",
     "Français (France)",
     "Deutsch",
-  ] as string[],
+  ],
   otherLinks: [
     "Sign Up",
     "Log In",
@@ -48,13 +72,10 @@ export const Links = {
     "Help",
     "Settings",
     "Activity Log",
-  ] as string[],
+  ],
 };
 
 export function useStore() {
-  // const languages = Links.languages;
-  // const otherLinks = Links.otherLinks;
-  // return { languages, otherLinks };
   const links = Links;
   return { links };
 }
